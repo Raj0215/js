@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  font-family: Arial, sans-serif;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="emergencyContact">Emergency Contact No:</label><br>
+        <input type="tel" id="emergencyContact" name="emergencyContact"><br>
+        <label for="permanentAddress">Permanent Address:</label><br>
+        <textarea id="permanentAddress" name="permanentAddress"></textarea><br>
+        <label for="mname">Middle Name:</label><br>
+        <input type="text" id="mname" name="mname"><br>
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+        <label for="corrAddress">Corresponding Address:</label><br>
+        <textarea id="corrAddress" name="corrAddress"></textarea><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="dob">Enter Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="religion">Religion:</label><br>
+        <input type="text" id="religion" name="religion" value="Hindu"><br>
+        <label for="mobile">Mobile No:</label><br>
+        <input type="tel" id="mobile" name="mobile"><br>
+        <label for="email">Email Id:</label><br>
+        <input type="email" id="email" name="email"><br>
+      </form>
+</body>
+</html>
